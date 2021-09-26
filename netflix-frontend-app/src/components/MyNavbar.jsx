@@ -60,7 +60,9 @@ class MyNavbar extends React.Component {
               <Nav.Link className="text-white">TV Shows</Nav.Link>
               <Nav.Link className="text-white">Movies</Nav.Link>
               <Nav.Link className="text-white">Recently Added</Nav.Link>
-              <Nav.Link className="text-white">My List</Nav.Link>
+              <Link to="/MyList">
+              <div className="text-white">My List</div>
+              </Link>
             </Nav>
             <Nav className="ml-auto text-white">
               <Form inline>

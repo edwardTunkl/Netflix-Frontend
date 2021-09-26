@@ -2,12 +2,13 @@ import "./App.css";
 import React from "react";
 import MyNavbar from "./components/MyNavbar";
 import MyGallery from "./components/MyGallery";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import MyHeader from "./components/MyHeader";
 import CommentSection from "./components/CommentSection";
 import AddComment from "./components/AddComment";
 import ShowDetail from "./components/ShowDetail";
 import {BrowserRouter as Router, Route } from 'react-router-dom'
+import MyList from "./components/MyList";
 
 class App extends React.Component {
   state = {
@@ -31,6 +32,7 @@ class App extends React.Component {
           <Row>
           <MyHeader/>
           </Row>
+          <Route path="/MyList" exact component={MyList} />
           {/* <Route path="/" exact render={(routerProps) => <AddComment {...routerProps} elementId={this.state.elementId} />} />
           <Route path="/" exact render={(routerProps) => <CommentSection {...routerProps} elementId={this.state.elementId} />} /> */}
               {/* <Col sm={4}><AddComment elementId={this.state.elementId}/></Col> */}
